@@ -34,7 +34,6 @@ jobs:
         NODE_OPTIONS: --experimental-vm-modules
 
     - name: SonarCloud Scan
-      if: false  # Désactive SonarCloud temporairement
       uses: SonarSource/sonarcloud-github-action@v2
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
